@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container">
+      <nav>
+
+        <a href="#" class="logo">Portfolio</a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+          <button id="themeToggle">🌙</button>
+          <button id="menuToggle">☰</button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="container hero-content">
+
+      <div class="hero-text reveal">
+
+        <h1>
+          Hi, I'm
+          <span>Your Name</span>
+        </h1>
+
+        <h2>
+          I'm a
+          <span class="typing"></span>
+        </h2>
+
+        <p>
+          Creative frontend developer building modern,
+          responsive, and interactive websites with
+          beautiful user experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Contact Me
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-image reveal">
+
+        <div class="image-card">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
+            alt="Profile"
+          />
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>About Me</h2>
+
+        <p>
+          Passionate frontend developer focused on
+          modern UI/UX and interactive experiences.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-card reveal">
+          <h3>Who I Am</h3>
+
+          <p>
+            I specialize in building responsive websites
+            using HTML, CSS, and JavaScript with modern
+            design principles and smooth interactions.
+          </p>
+        </div>
+
+        <div class="about-card reveal">
+
+          <h3>My Skills</h3>
+
+          <div class="skills-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>UI/UX</span>
+            <span>Animations</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <h3>HTML</h3>
+          <p>Semantic and accessible layouts.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>CSS</h3>
+          <p>Modern responsive UI design.</p>
+        </div>
+
+        <div class="skill-card reveal">
+          <h3>JavaScript</h3>
+          <p>Interactive and dynamic websites.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="filter-buttons reveal">
+
+        <button class="filter-btn active" data-filter="all">
+          All
+        </button>
+
+        <button class="filter-btn" data-filter="web">
+          Web
+        </button>
+
+        <button class="filter-btn" data-filter="ui">
+          UI/UX
+        </button>
+
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-category="web">
+
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+
+          <h3>Portfolio Website</h3>
+
+          <p>
+            Responsive portfolio with animations
+            and modern design.
+          </p>
+
+        </div>
+
+        <div class="project-card reveal" data-category="ui">
+
+          <img
+            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop"
+            alt=""
+          />
+
+          <h3>Dashboard UI</h3>
+
+          <p>
+            Modern admin dashboard interface.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESUME -->
+
+  <section id="resume">
+
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>Resume</h2>
+      </div>
+
+      <div class="resume-grid">
+
+        <div class="resume-card reveal">
+
+          <h3>Experience</h3>
+
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <h4>Frontend Developer</h4>
+              <p>2024 - Present</p>
+            </div>
+
+            <div class="timeline-item">
+              <h4>UI Designer</h4>
+              <p>2022 - 2024</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="resume-card reveal">
+
+          <h3>Education</h3>
+
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <h4>Computer Science</h4>
+              <p>University Name</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-title reveal">
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card reveal">
+
+          <h3>Get In Touch</h3>
+
+          <p>Email: your@email.com</p>
+          <p>Location: Pakistan</p>
+
+        </div>
+
+        <div class="contact-card reveal">
+
+          <form id="contactForm">
+
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
+
+            <textarea
+              id="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button class="btn btn-primary">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <p>© 2026 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
