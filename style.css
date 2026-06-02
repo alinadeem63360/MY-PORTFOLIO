@@ -42,10 +42,11 @@ img {
   width: 100%;
   display: block;
 }
-#profile{
-    width: 60px;
-    height: 70px;
-    display: flex;
+
+#profile {
+  width: 60px;
+  height: 70px;
+  display: flex;
 }
 
 a {
@@ -87,21 +88,58 @@ nav {
 }
 
 .nav-links a {
+  color: var(--muted);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: color 0.25s ease, background 0.25s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 999px;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+.nav-links a:hover {
   color: var(--text);
+  background: rgba(56,189,248,0.08);
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
 }
 
 .nav-buttons {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 #themeToggle,
 #menuToggle {
   background: none;
-  border: none;
-  color: var(--text);
+  border: 1px solid var(--border);
+  color: var(--muted);
   font-size: 1.3rem;
   cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+#themeToggle:hover,
+#menuToggle:hover {
+  color: var(--primary);
+  border-color: rgba(56,189,248,0.4);
+  background: rgba(56,189,248,0.08);
 }
 
 #menuToggle {
@@ -149,6 +187,12 @@ nav {
   border: none;
   cursor: pointer;
   font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease,
+              border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
 }
 
 .btn-primary {
@@ -160,10 +204,21 @@ nav {
   color: white;
 }
 
+.btn-primary:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
 .btn-outline {
   background: transparent;
   border: 1px solid var(--border);
   color: var(--text);
+}
+
+.btn-outline:hover {
+  border-color: rgba(56,189,248,0.4);
+  background: rgba(56,189,248,0.08);
+  color: var(--primary);
 }
 
 .image-card img {
@@ -253,10 +308,19 @@ nav {
   background: transparent;
   color: var(--text);
   cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: rgba(56,189,248,0.4);
+  background: rgba(56,189,248,0.08);
+  color: var(--primary);
 }
 
 .filter-btn.active {
   background: var(--primary);
+  color: #0f172a;
+  border-color: var(--primary);
 }
 
 /* RESUME */
@@ -282,6 +346,13 @@ textarea {
   border: 1px solid var(--border);
   background: transparent;
   color: var(--text);
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgba(56,189,248,0.5);
 }
 
 /* FOOTER */
