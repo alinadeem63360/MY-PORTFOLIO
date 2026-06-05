@@ -330,6 +330,12 @@ nav {
   border-radius: 20px;
 }
 
+
+#who{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
 /* SKILLS */
 
 .skills-list {
